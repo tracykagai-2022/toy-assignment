@@ -11,10 +11,22 @@ const rl = readline.createInterface({
 let userInput = "";
 
 // question user to enter speed
-rl.question("What is your speed ?\n", function (string) {
+rl.question("Speed of the car: ?\n", function (speed) {
     // use of parseInt or parseFloat to turn string to a number
-    let userSpeed = parseInt(string);
-
+    let speed_of_car= parseInt(speed, 10);
+    if (isNaN(speed)){
+        process.stdout.write("speed in numerical value\n")
+        process.stdout.write("input numerical value")
+        process.exit(1)
+    }else{
+        if (speed_of_car < 70){
+            process.stdout.write(points:)
+            if (demerit_points >=12)} 
+                process.stdout.write("Licence suspended.\n");
+        } else {
+            process.exit(0);
+        }  
+    }
     // calculate the user speed using 'speed detector'
      let speed = speedcalculate(speeddetector);
 
